@@ -29,14 +29,26 @@
 <body>
 
     <script type="text/javascript">
-    var changeEmoji = function() {
-    var bullet = document.getElementById("bullet");
-    if (bullet.innerHTML === "•") {
-            bullet.innerHTML = "🎯";
-    } else {
-            bullet.innerHTML = "•";
-    }
-}
+        var changeEmoji = function() {
+            var emoji = document.getElementById("emoji");
+            if (emoji.innerHTML === "👍") {
+                emoji.innerHTML = "👎";
+            } else {
+                emoji.innerHTML = "👍";
+            }
+        }
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Look, I changed!";
+        }
+
+        function myFunction2() {
+            document.getElementById("demo").innerHTML = "Hover over me to change my HTML content (innerHTML).";
+        }
+
+
+
+        }
     </script>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -54,14 +66,20 @@
             <h1>JavaScript</h1></div>
         <div class="container" style="font-size: 1.2em; line-height: 1.4; ">
             <h3>🎯 Learning Targets</h3>
-            <p><span id = "bullet"  onclick="changeEmoji()" >•</span> I can explain the difference between programming and markdown.</p>
-            <p><span id = "bullet"  onclick="changeEmoji()" >•</span> I can write and run JavaScript code in the console. </p>
-            <p><span id = "bullet"  onclick="changeEmoji()" >•</span> I can compare and contrast JavaScript with Scratch 😸.</p>
-            <p><span id = "bullet"  onclick="changeEmoji()" >•</span> I can identify essential features of JavaScript syntax.</p>
-            <p><span id = "bullet"  onclick="changeEmoji()" >•</span> I can define, identify, and distinguish between different datatypes. </p>
-            <p><span id = "bullet"  onclick="changeEmoji()" >•</span> I can define a conditional in programming.</p>
-            <p><span id = "bullet"  onclick="changeEmoji()" >•</span> I can write and evaluate conditionals in JavaScript.</p>
-            <p><span id = "bullet"  onclick="changeEmoji()" >•</span> I can declare variables and store information from a user in a variable. </p>
+            <li>I can explain the difference between programming and markdown.</li>
+            <li>I can write and run JavaScript code in the console. </li>
+            <li>I can compare and contrast JavaScript with Scratch 😸.</li>
+            <li>I can identify essential features of JavaScript syntax.</li>
+            <li>I can define, identify, and distinguish between different datatypes. </li>
+            <li>I can define a conditional in programming.</li>
+            <li>I can write and evaluate conditionals in JavaScript.</li>
+            <li>I can declare variables and store information from a user in a variable. </li>
 
             <h3 style="font-family: Bungee Shade">By the end of today, you will be able to make something happen on your webpage.</h3>
+
+            <h4>How do we feel so far?</h4>
+            <p id="emoji" onclick="changeEmoji()">👍</p>
+
+            <p id="demo" onmouseover="myFunction()" onmouseout="myFunction2()">Hover over me to change my HTML content (innerHTML).</p>
+
 </body>
