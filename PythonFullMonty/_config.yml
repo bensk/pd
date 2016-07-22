@@ -1,0 +1,50 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+# relative_permalinks: true
+
+# Setup
+title:               CS11
+tagline:             Advanced CS
+url:                 http://bsk.education/pd/PythonFullMonty
+paginate:            1
+baseurl:             "/pd/PythonFullMonty"
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+
+# About/contact
+author:
+  name:              Ben Samuels-Kalow
+  url:               http://bsk.education
+  email:             bsk@ms223.org
+
+# Custom vars
+version:             2.0.0
+github:
+  repo:              https://github.com/bensk
+
+# wyyyyyy
+gems:
+    # - jemoji
+    - jekyll-archives
+    - jekyll-paginate
+
+
+jekyll-archives:
+  enabled: []
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+
+future: true
