@@ -9,7 +9,7 @@ title:               CS11
 tagline:             Advanced CS
 url:                 http://bsk.education/pd/PythonFullMonty
 paginate:            1
-baseurl:             "/pd/PythonFullMonty"
+baseurl:             "/pd/PythonFullMonty/"
 
 # Assets
 #
