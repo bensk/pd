@@ -274,6 +274,6 @@ mark {
 }
 
 a:hover {
-/* 	font-size: 1.1em; */
-color: #FC4896;
+    text-decoration: none;
+
 }
